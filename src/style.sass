@@ -1,0 +1,322 @@
+// IMPORTS
+
+@import "partials/variables.sass"
+@import "partials/_misc.sass"
+
+
+// MAIN CONTAINERS
+
+.max-width
+	width: 100%
+	max-width: 990px
+	margin: auto
+
+
+// HEADER
+
+.header
+	position: relative
+.logo
+	width: 229px
+	position: absolute
+	left: 45px
+	top: 45px
+	z-index: 2
+	+desktop
+		left: inherit
+		right: 70px
+		top: -35px
+
+.hero
+	background: #ccc
+	height: 700px
+	position: relative
+	+desktop
+		height: 605px
+		margin-top: 90px
+	&:before
+		content: ''
+		position: absolute
+		background-image: linear-gradient(-48deg, #A6E2FE 0%, #4CB9ED 30%)
+		width: 150%
+		height: 100%
+		right: 0
+		top: 0
+
+.hero-phrase
+	position: absolute
+	transform: rotate(-90deg)
+	bottom: 160px
+	left: -70px
+	z-index: 2
+	+desktop
+		bottom: 250px
+		left: -175px
+.hero-phrase-subtitle
+	font-weight: 500
+	font-size: 13px
+	color: #FFFFFF
+	letter-spacing: 2px
+	+desktop
+		font-size: 18px
+.hero-phrase-title
+	margin-top: 20px
+	font-weight: 900
+	font-size: 45px
+	line-height: 40px
+	color: #FFFFFF
+	letter-spacing: 1px
+	+desktop
+		font-size: 67px
+		line-height: 57px
+.hero-image
+	position: absolute
+	width: 596px
+	height: 278px
+	right: 0
+	bottom: 0
+	z-index: 1
+
+
+// LOVE PHRASE
+
+.lovephrase
+	display: flex
+	flex-direction: column
+	+desktop
+		flex-direction: row
+.lovephrase-image
+	flex: 50%
+	padding-top: 140px
+	order: 2
+	z-index: 0
+	position: relative
+
+.lovephrase-phrase
+	width: 100%
+	flex: 50%
+	align-self: flex-start
+	background: #fff
+	padding: 60px 0px 60px 45px
+	font-weight: 600
+	font-size: 32px
+	line-height: 36px
+	color: #4CADE2
+	letter-spacing: 0
+	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15)
+	+desktop
+		order: 2
+		font-size: 40px
+		line-height: 46px
+		padding: 80px 0px 80px 65px
+	
+
+// EVENT
+
+.event-section
+	position: relative
+	padding-bottom: 55px
+	padding-top: 50px
+	margin-top: -55px
+	overflow: hidden
+	&:before
+		background-image: linear-gradient(-153deg, #0098DA 14%, #2798CA 100%)
+		content: ''
+		position: absolute
+		width: 150%
+		height: 90%
+		right: 0
+		top: 215px
+		z-index: -1
+
+.event
+	background-image: linear-gradient(-179deg, #FFFFFF 62%, rgba(255,255,255,0.00) 91%)
+	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15)
+	z-index: 1
+	position: relative
+	display: flex
+	padding: 0 0 0 30px
+	flex-direction: column
+	+desktop
+		flex-direction: row
+		padding: 0 55px
+
+.event-first-col
+	flex: 1
+	flex-basis: auto
+	padding-right: 50px
+	flex-grow: 0
+.event-second-col
+	flex: 3
+	padding-top: 30px
+	padding-right: 30px
+
+.event-date
+	background: #FFFFFF
+	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15)
+	padding: 25px 35px 20px 35px
+	margin-top: -40px
+	position: relative
+	&:before
+		background: url(img/stripes.svg) repeat-x top left
+		content: ''
+		position: absolute
+		width: 100%
+		height: 52px
+		right: 0
+		bottom: -30px
+		z-index: -1
+.event-date-day
+	font-weight: 600
+	font-size: 80px
+	line-height: 67px
+	color: #009EE3
+	letter-spacing: 0
+.event-date-month
+	border-top: #F0F0F0 2px solid
+	padding-top: 16px
+	margin-top: 20px
+	font-family: Montserrat-Medium
+	font-size: 16px
+	color: #ccc
+	letter-spacing: 0.91px
+	line-height: 29px
+	text-align: center
+
+
+.event-edition
+	background: #E6F5FC
+	padding: 5px 15px
+	float: right
+	text-align: right
+	font-weight: 600
+	font-size: 14px
+	color: #32B3FF
+	letter-spacing: 1px
+	line-height: 29px
+	border-radius: 30px
+.event-title
+	opacity: 0.7
+	font-weight: 600
+	font-size: 50px
+	line-height: 50px
+	color: #0D3343
+	letter-spacing: 0
+	padding-top: 85px
+	+desktop
+		font-size: 65px
+		line-height: 63px
+
+.event-adress
+	font-weight: 500
+	font-size: 22px
+	color: #BBBBBB
+	letter-spacing: 1.22px
+	line-height: 29px
+	margin-bottom: 55px
+	margin-top: 25px
+	+desktop
+		margin-top: 20px
+		margin-bottom: 65px
+
+
+// EVENT ROWS
+
+.event-schedule
+.event-schedule-row
+	border-top: 2px solid #A6DDF5
+	margin-bottom: 15px
+	padding-top: 15px
+	&.white
+		border-color: #fff
+		margin-top: 10px
+		.event-schedule-row-hour,
+		.event-schedule-row-spec
+			color: #fff
+.event-schedule-row-hour
+	display: inline-block
+	font-weight: 500
+	font-size: 18px
+	color: #009EE3
+	letter-spacing: 2px
+	line-height: 29px
+	margin-right: 20px
+.event-schedule-row-spec
+	display: inline-block
+	font-weight: 500
+	font-size: 18px
+	color: #009EE3
+	letter-spacing: 2px
+	line-height: 29px
+.event-schedule-row-arrow
+
+// EVENT SPEAKER CARD
+
+.event-speaker-card
+	background: #FFFFFF
+	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15)
+	display: flex
+	padding: 30px
+	margin-bottom: 30px
+
+.event-speaker-photo
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.20)
+	flex: 1
+	flex-basis: auto
+	flex-grow: 0
+	border-radius: 50%
+	width: 125px
+	height: 125px
+	margin-right: 20px
+
+.event-speaker-info
+	flex: 3
+
+.event-speaker-name
+	opacity: 1
+	font-weight: 700
+	font-size: 25px
+	color: #0D3343
+.event-speaker-title
+	font-weight: 400
+	font-size: 18px
+	color: #999999
+	line-height: 28px
+.event-speaker-speach
+	font-weight: 400
+	font-size: 18px
+	color: #999999
+	line-height: 28px
+
+
+
+// FOOTER
+
+footer
+	background: #fff
+	font-weight: 400
+	font-size: 14px
+	color: #999999
+	line-height: 29px
+	padding: 20px 0
+	text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

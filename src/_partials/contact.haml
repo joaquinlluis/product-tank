@@ -1,0 +1,34 @@
+.contact-content
+  %hr/
+  .flex.container
+    .image
+      %img{:src => "img/contact-me.svg", :alt => ""}/
+      %br
+      %br
+      *Zoolander face
+    %form{:action => "post"}
+      %h4
+        Call me maybe!
+      .input
+        %input#email{:type => "text", :name => "email", :placeholder => "Type your email here..."}/
+        %label{:for => "email"}
+          Your email
+      .input
+        .select
+          %select#subject{:name => "select"}
+            %option{:value => "Select here…"}
+              Select a subject
+            %option{:value => "Select"}
+              Professional contact
+            %option{:value => "Select"}
+              Work inquiry
+      .input
+        %textarea#message{:name => "", :cols => "30", :rows => "8", :placehoder => "Type your message here..."}
+        %label{:for => "message"}
+          Message
+
+      %button{:type => "submit"}
+        SEND MESSAGE
+
+
+
