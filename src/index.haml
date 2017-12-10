@@ -29,20 +29,28 @@
   %body
     %main
 
-      // HERO PHRASE
+      // HERO + NAVIGATION
       %section
+        .navigation
+          %ul.max-width
+            %li
+              %button
+                PARTICIPAR
+            %li
+              %a
+                OTRAS EDICIONES
         .header.max-width
           %img.logo{:src => "img/logo.svg", :width => "229"}
           .hero
             .hero-phrase
-              .hero-phrase-subtitle
-                ESTAMOS
               .hero-phrase-title
                 HACIENDO
                 %br
                 PRODUCTO
                 %br
                 EN ARGENTINA
+              .hero-phrase-arrows
+                %img{:src => "img/hero-phrase-arrows.svg", :width => "88", :height => "17"}
             .hero-image
               %img{:src => "img/header-forma.svg"}
 
@@ -50,8 +58,14 @@
       %section.lovephrase-section
         .lovephrase.max-width
           .lovephrase-image
-
             %img{:src => "img/love-phrase-img.png"}
+            .section-next-title
+              .section-title-subtitle
+                LO QUE SE VIENE
+              .section-title-title
+                Próximo
+                %br
+                Evento
           .lovephrase-phrase
             Los mejores
             %br
@@ -126,16 +140,76 @@
 
               %a.event-participate{:href => "https://www.meetup.com/ProductTank-Buenos-Aires/events/243174116/"}
                 PARTICIPAR
-          .event-social
-            %a.event-social-link{:href => "#"}
-              %img{:src => "img/facebook.svg"}
-            %a.event-social-link{:href => "#"}
-              %img{:src => "img/twitter.svg"}
-            %a.event-social-link{:href => "#"}
-              %img{:src => "img/instagram.svg"}
+
+
+        .other-editions
+          .other-editions-title
+            .other-editions-title-subtitle
+              NO TE PIERDAS NADA
+            .other-editions-title-title
+              Ediciones anteriores
+          .event.max-width
+            // EVENT SHIT -------------------------------- <
+            .event-first-col
+              .event-date
+                .event-date-day
+                  03
+                .event-date-month
+                  OCTUBRE
+            .event-second-col
+              .event-edition
+                5TA EDICIÓN
+              .event-title
+                Auditorio
+                %br
+                de Digital House
+              .event-adress
+                Av. Monroe 860, Ciudad de Buenos Aires
+
+              .event-schedule
+                .event-speaker-card
+                  .event-speaker-photo
+                    %img{:src => "img/speaker-1.png"}
+                  .event-speaker-info
+                    .event-speaker-name
+                      Alejandro Vizio
+                    .event-speaker-title
+                      Founder & Creative Director @ Aerolab
+                    .event-speaker-speach
+                      “El método científico para crear productos”
+
+                .event-speaker-card
+                  .event-speaker-photo
+                    %img{:src => "img/speaker-2.png"}
+                  .event-speaker-info
+                    .event-speaker-name
+                      Emiliano Grasso
+                    .event-speaker-title
+                      Gerente Productos Cross @ Almundo.com
+                    .event-speaker-speach
+                      “Generar engagement en mobile, el desafío más dificil del product manager”
+            .event-third-col
+              .event-media-links
+                %a.event-media-links-video
+                  VER VIDEO
+                %a.event-media-links-images
+                  VER FOTOS
+
+
+        .event-social
+          %a.event-social-link{:href => "#"}
+            %img{:src => "img/facebook.svg"}
+          %a.event-social-link{:href => "#"}
+            %img{:src => "img/twitter.svg"}
+          %a.event-social-link{:href => "#"}
+            %img{:src => "img/instagram.svg"}
 
       %footer
-        © Product Tank - Buenos Aires — All rights reserved.
+        %span
+          © Product Tank - Buenos Aires
+        %span
+          %i—
+          All rights reserved.
 
 
 

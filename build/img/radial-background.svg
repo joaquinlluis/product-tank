@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1230px" height="653px" viewBox="0 0 1230 653" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>radial-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.150000006">
+        <g id="Website-desktop" transform="translate(-346.000000, -2118.000000)" stroke="#EEEEEE" stroke-width="4">
+            <g id="radial-background" transform="translate(348.000000, 2120.000000)">
+                <circle id="Oval-2" stroke-opacity="0.6" cx="614" cy="614" r="259"></circle>
+                <circle id="Oval-2" stroke-opacity="0.5" cx="613" cy="613" r="366"></circle>
+                <circle id="Oval-2" stroke-opacity="0.4" cx="614" cy="614" r="488"></circle>
+                <circle id="Oval-2" stroke-opacity="0.3" cx="613" cy="613" r="613"></circle>
+                <circle id="Oval-2" stroke-opacity="0.65" cx="613.5" cy="613.5" r="171.5"></circle>
+                <circle id="Oval-2" stroke-opacity="0.7" cx="613" cy="613" r="87"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -11,6 +11,40 @@
 	max-width: 990px
 	margin: auto
 
+//NAVIGATION
+.navigation
+	padding: 18px 30px
+	background: #fff
+	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.3)
+	margin-bottom: 90px
+	position: fixed
+	top: 0
+	z-index: 99
+	width: 100%
+	+desktop
+		padding: 45px 0px 20px 0px
+		margin-bottom: 0
+	ul li
+		display: inline-block
+		font-size: 13px
+		color: #999999
+		font-weight: 600
+		letter-spacing: 1px
+		button
+			font-size: 13px
+			color: #fff
+			font-weight: 600
+			letter-spacing: 1px
+			background-image: linear-gradient(-140deg, #2F7C9D 0%, #1B546C 64%)
+			box-shadow: 0 2px 40px 0 rgba(0,0,0,0.15)
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			border-radius: 0
+			border: none
+			padding: 10px 12px
+		&:first-child
+			margin-right: 10px
 
 // HEADER
 
@@ -19,21 +53,23 @@
 .logo
 	width: 229px
 	position: absolute
-	left: 45px
-	top: 45px
+	left: 30px
+	top: -35px
 	z-index: 2
 	+desktop
 		left: inherit
 		right: 70px
 		top: -35px
+		z-index: 99
 
 .hero
 	background: #ccc
 	height: 700px
 	position: relative
+	margin-top: 165px
 	+desktop
 		height: 605px
-		margin-top: 90px
+		margin-top: 101px
 	&:before
 		content: ''
 		position: absolute
@@ -45,13 +81,18 @@
 
 .hero-phrase
 	position: absolute
-	transform: rotate(-90deg)
 	bottom: 160px
 	left: -70px
 	z-index: 2
+	transform: rotate(-90deg)
 	+desktop
-		bottom: 250px
-		left: -175px
+		bottom: inherit
+		top: 110px
+		left: 0
+		transform: rotate(0deg)
+	img
+		padding-top: 40px
+		width: auto
 .hero-phrase-subtitle
 	font-weight: 500
 	font-size: 13px
@@ -60,7 +101,6 @@
 	+desktop
 		font-size: 18px
 .hero-phrase-title
-	margin-top: 20px
 	font-weight: 900
 	font-size: 45px
 	line-height: 40px
@@ -77,7 +117,6 @@
 	bottom: 0
 	z-index: 1
 
-
 // LOVE PHRASE
 .lovephrase-section
 	overflow: hidden
@@ -90,7 +129,7 @@
 	flex: 50%
 	padding-top: 140px
 	order: 2
-	z-index: 0
+	z-index: 2
 	position: relative
 	&:before
 		background: url(img/stripes.svg) repeat-x top left
@@ -113,7 +152,37 @@
 			background-image: linear-gradient(-151deg, #0098DA 51%, #2798CA 100%)
 			box-shadow: 0 -8px 70px 0 rgba(0,158,227,0.78)	
 
+.section-next-title
+	position: absolute
+	width: 100%
+	bottom: 107px
+	left: 30px
+	background-image: linear-gradient(42deg, #A7E2FE 0%, #4CB9EC 97%)
+	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.3)
+	z-index: 4
+	padding: 25px 0px 30px 30px
+	+desktop
+		left: 55px
+		padding: 35px 0px 45px 35px
+.section-title-subtitle
+	opacity: 0.7
+	font-weight: 600
+	font-size: 14px
+	color: #FFFFFF
+	letter-spacing: 1px
+	line-height: 29px
 
+	+desktop
+		font-size: 18px
+		padding-bottom: 10px
+.section-title-title
+	font-weight: 600
+	font-size: 32px
+	line-height: 30px
+	color: #FFFFFF
+	+desktop
+		font-size: 44px
+		line-height: 39px
 .lovephrase-phrase
 	width: 100%
 	flex: 50%
@@ -132,7 +201,7 @@
 		font-size: 40px
 		line-height: 46px
 		padding: 80px 0px 80px 65px
-		&:after
+		&:before
 			content: ''
 			position: absolute
 			width: 150%
@@ -142,7 +211,7 @@
 			z-index: 1
 			background-image: linear-gradient(-151deg, #0098DA 51%, #2798CA 100%)
 			box-shadow: 0 -8px 70px 0 rgba(0,158,227,0.78)
-		&:before
+		&:after
 			background: url(img/background-dots.svg) no-repeat top left
 			content: ''
 			position: absolute
@@ -157,16 +226,18 @@
 
 .event-section
 	position: relative
-	padding-bottom: 55px
+	padding-bottom: 160px
 	padding-top: 100px
 	margin-top: -105px
 	overflow: hidden
+	+desktop
+		padding-bottom: 195px
 	&:before
 		background-image: linear-gradient(-153deg, #0098DA 14%, #2798CA 100%)
 		content: ''
 		position: absolute
 		width: 100%
-		height: 90%
+		height: 100%
 		right: 0
 		top: 265px
 		z-index: -1
@@ -178,19 +249,21 @@
 		width: 100%
 		height: 100%
 		right: 0
-		bottom: -350px
+		bottom: -140px
 		z-index: -1
 		opacity: 0.6
 
 .event	
-	z-index: 1
+	z-index: 2
 	position: relative
 	display: flex
 	padding: 0 0 0 30px
 	flex-direction: column
 	+desktop
 		flex-direction: row
+		flex-flow: row wrap
 		padding: 0 55px
+
 		&:after
 			content: ''
 			position: absolute
@@ -222,14 +295,16 @@
 .event-second-col
 	flex: 3
 	padding-top: 30px
-	padding-right: 30px
+.event-third-col
+	flex: 1 100%
 
 .event-date
 	background: #FFFFFF
-	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15)
+	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15), inset 0 12px 0px 0 #E6F5FC
 	padding: 25px 35px 20px 35px
 	margin-top: -40px
 	position: relative
+	float: left
 	+desktop
 		&:before
 			background: url(img/stripes.svg) repeat-x top left
@@ -403,22 +478,27 @@
 	color: #FFFFFF
 	letter-spacing: 3px
 	line-height: 29px
-	min-width: 100%
-	float: right
 	text-align: center
-	margin: 30px 0 120px 0
+	margin: 30px 30px 120px 0
 	transition: all .5s ease
 	border-radius: 0
+	display: block
 	&:hover
 		background-image: linear-gradient(-143deg, #009EE3 0%, #00CDF3 61%)
 		transition: all .5s ease 
 		transform: scale(1.05,1.05)
 	+desktop
+		margin: 30px 0px 120px 0
 		min-width: 50%
+		display: inline-block
+		float: right
 
 .event-social
 	position: absolute
 	bottom: 0
+	width: 100%
+	text-align: center
+	padding-bottom: 45px
 .event-social-link
 	margin-right: 5px
 	transition: all ease .5s
@@ -436,18 +516,126 @@
 	height: 35px
 	transition: all ease .5s
 
+// OTHER EDITIONS
+.other-editions
+	width: 100%
+	max-width: 1100px
+	margin: auto
+	background-image: linear-gradient(-48deg, #A7E2FE 0%, #4CB9EC 81%)
+	box-shadow: 0 -7px 70px 0 rgba(0,0,0,0.15)
+	padding: 75px 0
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: url(img/square-pattern.svg)
 
+	+desktop
+		padding: 55px
+	.event
+		background: #fff
+		box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15)
+		&:before, &:after
+			display: none
+
+.other-editions-title-subtitle
+	opacity: 0.7
+	font-weight: 600
+	font-size: 14px
+	color: #FFFFFF
+	letter-spacing: 1px
+	line-height: 29px
+	width: 100%
+	text-align: center
+	margin-bottom: 5px
+	+desktop
+		font-size: 18px
+		letter-spacing: 1.5px
+
+.other-editions-title-title
+	font-weight: 600
+	font-size: 32px
+	color: #FFFFFF
+	line-height: 30px
+	width: 100%
+	text-align: center
+	margin-bottom: 130px
+	padding: 0 30px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		height: 2px
+		width: 40px
+		background: rgba(255,255,255,0.5)
+		bottom: -35px
+		left: 50%
+		margin-left: -20px
+	+desktop
+		font-size: 44px
+		line-height: 44px
+		padding: 0
+		margin-bottom: 110px
+
+.event-third-col
+	margin: 20px 0 0 -30px 
+	+desktop
+		margin: 20px -55px 0 -55px
+
+.event-media-links
+	background: #E5F4FB
+	padding: 35px 30px
+	+desktop
+		padding: 30px 55px
+		text-align: right
+.event-media-links-video,
+.event-media-links-images
+	font-weight: 600
+	font-size: 16px
+	color: #FFFFFF
+	letter-spacing: 2.84px
+	line-height: 29px
+	background-image: linear-gradient(-140deg, #2F7C9D 0%, #1B546C 64%)
+	box-shadow: 0 2px 40px 0 rgba(0,0,0,0.3)
+	padding: 14px 25px
+	display: inline-block
+	width: 100%
+	margin-bottom: 20px
+	text-align: center
+	+desktop
+		margin-left: 25px
+		margin-bottom: 0
+		width: auto
+.event-media-links-images
+	margin-bottom: 0
+	background-image: linear-gradient(-143deg, #00CDF3 0%, #009EE3 61%)
 
 // FOOTER
 
 footer
 	background: #fff
 	font-weight: 400
-	font-size: 16px
+	font-size: 14px
 	color: #999999
-	line-height: 29px
-	padding: 20px 0
+	line-height: 16px
+	padding: 30px 0
 	text-align: center
+	+desktop
+		font-size: 16px
+		line-height: 18px
+	span
+		display: block
+		i
+			display: none
+			+desktop
+				display: inline-block
+		+desktop
+			display: inline-block
+
 
 
 

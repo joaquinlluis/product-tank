@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="278px" height="52px" viewBox="0 0 278 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="278" height="52"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1">
+        <g id="Website-desktop" transform="translate(-467.000000, -700.000000)">
+            <g id="Group-5" transform="translate(467.000000, 700.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle-7"></g>
+                <g id="Group-4" mask="url(#mask-2)" stroke-linecap="square" stroke="#979797" stroke-width="4">
+                    <g transform="translate(-57.188571, -1.575758)" id="Line-3">
+                        <path d="M74.4642857,0.984848485 L20.7214504,54.2941793"></path>
+                        <path d="M94.3214286,0.984848485 L40.5785933,54.2941793"></path>
+                        <path d="M114.178571,0.984848485 L60.4357361,54.2941793"></path>
+                        <path d="M134.035714,0.984848485 L80.292879,54.2941793"></path>
+                        <path d="M153.892857,0.984848485 L100.150022,54.2941793"></path>
+                        <path d="M173.75,0.984848485 L120.007165,54.2941793"></path>
+                        <path d="M193.607143,0.984848485 L139.864308,54.2941793"></path>
+                        <path d="M213.464286,0.984848485 L159.72145,54.2941793"></path>
+                        <path d="M233.321429,0.984848485 L179.578593,54.2941793"></path>
+                        <path d="M253.178571,0.984848485 L199.435736,54.2941793"></path>
+                        <path d="M273.035714,0.984848485 L219.292879,54.2941793"></path>
+                        <path d="M292.892857,0.984848485 L239.150022,54.2941793"></path>
+                        <path d="M312.75,0.984848485 L259.007165,54.2941793"></path>
+                        <path d="M332.607143,0.984848485 L278.864308,54.2941793"></path>
+                        <path d="M352.464286,0.984848485 L298.72145,54.2941793"></path>
+                        <path d="M372.321429,0.984848485 L318.578593,54.2941793"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
