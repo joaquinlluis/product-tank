@@ -286,7 +286,6 @@
 		right: 0
 		z-index: -1
 
-
 .event-first-col
 	flex: 1
 	flex-basis: auto
@@ -294,7 +293,9 @@
 	flex-grow: 0
 .event-second-col
 	flex: 3
-	padding-top: 30px
+	padding-top: 10px
+	+desktop
+		padding-top: 30px
 .event-third-col
 	flex: 1 100%
 
@@ -302,10 +303,14 @@
 	background: #FFFFFF
 	box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15), inset 0 12px 0px 0 #E6F5FC
 	padding: 25px 35px 20px 35px
-	margin-top: -40px
+	margin-top: -60px
 	position: relative
 	float: left
+	transform-origin: left
+	transform: scale(.8,.8)
 	+desktop
+		transform: scale(1,1)
+		margin-top: -40px
 		&:before
 			background: url(img/stripes.svg) repeat-x top left
 			content: ''
@@ -339,7 +344,7 @@
 	float: left
 	text-align: right
 	font-weight: 500
-	font-size: 15px
+	font-size: 14px
 	color: #32B3FF
 	letter-spacing: 1px
 	line-height: 29px
@@ -347,11 +352,12 @@
 	margin-top: 10px
 	+desktop
 		float: right
+		font-size: 16px
 .event-title
 	opacity: 0.7
 	font-weight: 600
-	font-size: 50px
-	line-height: 50px
+	font-size: 44px
+	line-height: 42px
 	color: #0D3343
 	letter-spacing: 0
 	padding-top: 55px
@@ -361,16 +367,17 @@
 
 .event-adress
 	font-weight: 500
-	font-size: 20px
+	font-size: 18px
 	line-height: 22px
 	color: #BBBBBB
-	letter-spacing: 1.22px
+	letter-spacing: 0px
 	margin-bottom: 55px
 	margin-top: 25px
 	+desktop
 		margin-top: 20px
 		margin-bottom: 65px
 		font-size: 22px
+		letter-spacing: .5px
 
 
 // EVENT ROWS
@@ -523,8 +530,10 @@
 	margin: auto
 	background-image: linear-gradient(-48deg, #A7E2FE 0%, #4CB9EC 81%)
 	box-shadow: 0 -7px 70px 0 rgba(0,0,0,0.15)
-	padding: 75px 0
+	padding: 75px 20px
 	position: relative
+	+desktop
+		padding: 55px
 	&:before
 		content: ''
 		position: absolute
@@ -533,12 +542,12 @@
 		width: 100%
 		height: 100%
 		background: url(img/square-pattern.svg)
-
-	+desktop
-		padding: 55px
 	.event
 		background: #fff
 		box-shadow: 0 -8px 70px 0 rgba(0,0,0,0.15)
+		margin-bottom: 70px
+		&:last-child
+			margin-bottom: 0
 		&:before, &:after
 			display: none
 
@@ -613,6 +622,16 @@
 .event-media-links-images
 	margin-bottom: 0
 	background-image: linear-gradient(-143deg, #00CDF3 0%, #009EE3 61%)
+
+
+// EVENT CARD VARIATIONS
+.event.internacional
+	background: #093F59
+	.event-title
+		color: #fff
+		opacity: 1
+	.event-edition
+		background: rgba(255,255,255,0.1)
 
 // FOOTER
 
